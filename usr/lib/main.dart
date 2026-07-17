@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'screens/report_screen.dart';
 import 'screens/dashboard_screen.dart';
 import 'screens/communities_screen.dart';
 import 'screens/projects_screen.dart';
@@ -25,6 +26,7 @@ class TribalDevApp extends StatelessWidget {
       initialRoute: '/',
       routes: {
         '/': (context) => const DashboardScreen(),
+        '/report': (context) => const ReportScreen(),
         '/communities': (context) => const CommunitiesScreen(),
         '/projects': (context) => const ProjectsScreen(),
       },

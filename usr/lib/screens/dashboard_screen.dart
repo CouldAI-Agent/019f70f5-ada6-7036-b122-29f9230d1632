@@ -138,6 +138,14 @@ class AppDrawer extends StatelessWidget {
             },
           ),
           ListTile(
+            leading: const Icon(Icons.picture_as_pdf),
+            title: const Text('Project Report (PDF)'),
+            onTap: () {
+              Navigator.pop(context); // Close drawer
+              Navigator.pushNamed(context, '/report');
+            },
+          ),
+          ListTile(
             leading: const Icon(Icons.people),
             title: const Text('Communities'),
             onTap: () {
